@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="450dp">
+
+    <com.gigamole.library.PulseView
+        android:id="@+id/pv"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:pv_icon="@drawable/light_fire"
+        app:pv_alpha="70"
+        app:pv_color="@color/colorAccent"
+        android:layout_centerInParent="true"
+        app:pv_count="2"
+        app:pv_measure="height"
+        app:pv_icon_width="300dp"
+        app:pv_icon_height="300dp"
+        app:pv_spawn_period="1500"
+        app:pv_interpolator="@android:anim/linear_interpolator"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/there_are_no_scorching_places_nearby"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:id="@+id/share_button"
+        android:background="@drawable/gradient_button"
+        android:text="@string/invite_friends_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_alignBottom="@+id/pv"
+        android:layout_alignLeft="@+id/pv"
+        android:layout_alignStart="@+id/pv">
+
+
+
+    </Button>
+
+
+</RelativeLayout>

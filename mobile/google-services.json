@@ -1,0 +1,131 @@
+{
+  "project_info": {
+    "project_number": "304187132985",
+    "firebase_url": "https://api-project-304187132985.firebaseio.com",
+    "project_id": "api-project-304187132985",
+    "storage_bucket": "api-project-304187132985.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304187132985:android:f325c02fe6ede3b9",
+        "android_client_info": {
+          "package_name": "com.jailbird.passerby"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304187132985-sc9388ptod5me1crkb55cti1cgiur3lk.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "304187132985-0jvn0e12pehfcs0o1g15h6995e8ecvba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuf98jO0BNs9PZEF94tnCHZYXwXox59KM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304187132985-sc9388ptod5me1crkb55cti1cgiur3lk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304187132985:android:49f08d1291e51086",
+        "android_client_info": {
+          "package_name": "com.jailbird.celineapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304187132985-sc9388ptod5me1crkb55cti1cgiur3lk.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "304187132985-0jvn0e12pehfcs0o1g15h6995e8ecvba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuf98jO0BNs9PZEF94tnCHZYXwXox59KM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304187132985-sc9388ptod5me1crkb55cti1cgiur3lk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304187132985:android:2f3af5428fe8cb1c",
+        "android_client_info": {
+          "package_name": "com.jailbird.scorch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304187132985-sc9388ptod5me1crkb55cti1cgiur3lk.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "304187132985-0jvn0e12pehfcs0o1g15h6995e8ecvba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQyX50yZYb2ycenLpY3EWJYZ42g8jiSzE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304187132985-sc9388ptod5me1crkb55cti1cgiur3lk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

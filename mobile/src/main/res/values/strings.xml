@@ -1,0 +1,223 @@
+<resources>
+    <string name="app_name">Scorch</string>
+    <string name="facebook_app_id">529447950581812</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="fb_link">https://fb.me/573949842798289</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="native_ad_unit_id">ca-app-pub-1305966593741596/8132530265</string>
+<string name="event_ad_unit_id">ca-app-pub-1305966593741596/7733305868</string>
+    <string name="test_ad_unit_id">ca-app-pub-3940256099942544/2177258514</string>
+
+    <string name="sign_in_with_twitter">Sign in with Twitter</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="client_ID">304187132985-sc9388ptod5me1crkb55cti1cgiur3lk.apps.googleusercontent.com</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="map_api_key">AIzaSyCQyX50yZYb2ycenLpY3EWJYZ42g8jiSzE</string>
+    <string name="scifi">Science Fiction</string>
+    <string name="photos">Photos:</string>
+    <string name="fits_your_interests">Fits your interests:</string>
+    <string name="photo_bucket">gs://api-project-304187132985.appspot.com/</string>
+    <string name="title_activity_account">AccountActivity</string>
+    <string name="log_out">Log Out</string>
+    <string name="interests">"Interests: "</string>
+    <string name="favorites">Favorites</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="search_distance">Search Distance</string>
+    <string name="distance_units">Distance Units</string>
+    <string name="just_now">Just now</string>
+    <string name="report_photo">Report Photo</string>
+    <string name="invitation_title">Come see what\'s hot!</string>
+    <string name="invitation_message">wants to show you the most interesting places nearby.</string>
+    <string name="invitation_cta">Check it out</string>
+    <string name="title_activity_profile">Edit your profile</string>
+    <string name="your_name">Your Name</string>
+    <string name="about_you">About you:</string>
+    <string name="interests_heading">Interests:</string>
+    <string name="edit_your_favorites">Edit your Favorites</string>
+    <string name="edit_your_interests">Edit your Interests</string>
+    <string name="photo_updated">" Photo Updated! "</string>
+    <string name="something_wrong">" Something went wrong! "</string>
+    <string name="favorites_heading">Favorites:</string>
+    <string name="is_favorite">This place is already in your favorites</string>
+    <string name="fav_remove">Removed from favorites</string>
+    <string name="remove_fav">Remove?</string>
+    <string name="fav_added">Added to favorites</string>
+    <string name="posting_comment">"Posting comment! "</string>
+    <string name="current">Current</string>
+    <string name="filter">Filter</string>
+    <string name="invite_friends">Invite friends</string>
+    <string name="invitation_deep_link">https://dvq7q.app.goo.gl/rniX</string>
+    <string name="place_invite_text">"wants to hang out at "</string>
+    <string name="share_using">Share Using</string>
+    <string name="join_us">"Join us on Scorch!\n "</string>
+    <string name="say_something">Say something</string>
+    <string name="add_a_photo">Add a photo</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="licenses">Licenses</string>
+    <string name="about">About</string>
+    <string name="notifications">Notifications</string>
+    <string name="privacy_link">http://scorchlive.com/privacy.html</string>
+    <string name="tos_link">http://scorchlive.com/tos.html</string>
+    <string name="chooser_title">Open with</string>
+    <string name="welcome">Welcome to scorch</string>
+    <string name="choose">Choose your hobbies and interests</string>
+    <string name="choose_desc">Once you pick your interests we\'ll show you the best places that match you.</string>
+    <string name="perms">Permissions</string>
+    <string name="perms_loc">Scorch needs access to your location</string>
+    <string name="hot">Let\'s see whats hot</string>
+    <string name="grant">Grant Permissions</string>
+    <string name="there_are_no_scorching_places_nearby">There are no scorching places nearby.</string>
+    <string name="invite_friends_txt">Invite Friends</string>
+    <string name="friends">Friends:</string>
+    <string name="friend_invite">wants to be friends on Scorch</string>
+    <string name="accepted">Accepted</string>
+    <string name="invite_to_place">Invite to place</string>
+    <string name="remove_friend">Remove friend</string>
+    <string name="shout">Shout</string>
+    <string name="f_request">Friend Requests</string>
+    <string name="i_text">Invites</string>
+    <string name="version_string">ver. 1.2</string>
+    <string name="check_friend">Add your friends</string>
+    <string name="friend_desc">See what places your friends are hanging out at in real-time!</string>
+    <string name="adding_prompt">Adding friends allows them to see your Favorites, Interests and current Place. Is that ok?</string>
+    <string name="gps_network_not_enabled">Your GPS needs to be enabled for Scorch to work. Would you like to enable it now?</string>
+    <string name="Cancel">Cancel</string>
+    <string name="clear_invites">Clear all your Place Invites?</string>
+    <string name="clear_requests">Clear all your Friend requests?</string>
+    <string name="night_mode_switches_the_map_to_a_darker_color_at_night">Night mode switches the map to a darker color at night</string>
+    <string name="allow_scorch_to_receive_notifications">Allow Scorch to receive notifications</string>
+    <string name="night_mode">Night mode</string>
+    <string name="no_interests">You haven\'t chosen any Interests.\n Pick some to see the best Places.</string>
+    <string name="choose_interests">Pick Interests</string>
+    <string name="title_activity_feed">Feed</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="time">Time</string>
+    <string name="details">Details</string>
+    <string name="location">Location</string>
+
+
+    <array name="currency_array">
+        <item>US Dollar ($)</item>
+        <item>Euro (€)</item>
+        <item>Japanese Yan (¥)</item>
+        <item>British Pound (£)</item>
+        <item>Saudi Ryal (﷼)</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="licence_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtMbdRt3NjEbMUBQ16ybEnthU21VLJuGMqJXibRVLG1tfrAnpW+lAyt5mjPZmzrnHZgstgex6+IWl04rPCZTnyqnT/qhbae42P4NJaY5w52z7C4k1uOrCxUh4a4SCvM4lSnrJXfoVSsmFgvO5+jMtBi3BZ0KLXLYHizh3FqMnkkvz4ltVIhnvjkVpFU46ToEvS9hD036LLfZe+aoqeHhcNXbYCw3maCpkTkLQMkF1i7g6RpUl+lqVSmTdARFY1Pzaabcvhs+pdXTEd9WGcNShOJ/LS2B57Cg9SglRq/Y1Dec8BP5Gk+fZCN+IqqYVAu15Fgcv2n+Ffg8ZM2F+1dbZNQIDAQAB</string>
+    <string name="discard_boosted">Discard Boosted Event?</string>
+    <string name="discard_boosted_prompt">Are you sure you want to discard your Boosted Event?</string>
+    <string name="discard_event">Are you sure you want to discard your Event?</string>
+    <string name="img_select_prompt">Please select an Image for your Event</string>
+    <string name="location_select_prompt">Please select a Location and Interests for your Event</string>
+    <string name="my_events">My Events</string>
+    <string name="acct">Account</string>
+    <string name="tap_to_edit">Tap on items to Edit them</string>
+</resources>

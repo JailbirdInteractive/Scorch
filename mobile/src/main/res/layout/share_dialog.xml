@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageButton
+        android:id="@+id/google_button"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/g_bg"
+    android:layout_marginEnd="20dp"
+        android:src="@drawable/google_logo"
+        android:layout_marginRight="20dp" />
+
+    <ImageButton
+        android:id="@+id/facebook_button"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/fb_bg"
+
+        android:src="@drawable/fb_logo"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp" />
+
+    <ImageButton
+        android:id="@+id/share_button"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/button_bg"
+        android:src="@drawable/ic_share_white_36dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Comment"
+        android:icon="@drawable/ic_insert_comment_white_24dp"
+        app:showAsAction="never"
+        android:id="@+id/comment" />
+    <item android:title="Directions"
+        android:icon="@drawable/ic_directions_white_24dp"
+        app:showAsAction="never"
+        android:id="@+id/directions" />
+    <item android:title="Add Photo"
+        android:icon="@drawable/ic_add_a_photo_white_48dp"
+        app:showAsAction="never"
+        android:id="@+id/add_photo" />
+    <item android:title="Add to favorites"
+        android:icon="@drawable/ic_favorite_white_24dp"
+        app:showAsAction="never"
+        android:id="@+id/add_favs" />
+    <item android:title="Share this place"
+        android:icon="@drawable/ic_share_white_36dp"
+        app:showAsAction="ifRoom"
+        android:id="@+id/share_place"
+        />
+
+    <item android:title="Boost this place"
+        android:icon="@drawable/ic_action_boost_rocket"
+        app:showAsAction="ifRoom"
+        android:id="@+id/boost_place"
+        />
+
+</menu>

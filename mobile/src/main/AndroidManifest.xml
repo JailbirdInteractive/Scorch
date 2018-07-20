@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jailbird.scorch">
+
+    <uses-sdk tools:overrideLibrary="com.andremion.floatingnavigationview" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <meta-data
+            tools:node="replace"
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider529447950581812"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:noHistory="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs "com.example.myapp://" -->
+                <data android:scheme="com.jailbird.scorch://" />
+                <data
+                    android:host="fb.me/573949842798289"
+                    android:scheme="https" />
+                <data
+                    android:host="@string/fb_link"
+                    android:scheme="com.jailbird.scorch://" />
+                <data
+                    android:host="fb.me/573949842798289"
+                    android:scheme="com.jailbird.scorch://" />
+                <data
+                    android:host="scorchlive.com"
+                    android:scheme="https" />
+                <data
+                    android:host="jailbirdinteractive.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/light_fire" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="55eacb05915440e012a3de55b3aaf247d6ce254a" />
+
+        <activity
+            android:name=".PickerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:noHistory="false" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:configChanges="orientation|uiMode|screenSize|fontScale"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".PlaceInfoActivity"
+            android:configChanges="orientation|uiMode|screenSize|fontScale|keyboardHidden|keyboard" />
+        <activity
+            android:name=".AccountActivity"
+            android:configChanges="orientation|uiMode|screenSize|fontScale|keyboardHidden|keyboard"
+            android:label="@string/title_activity_account" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".AccountActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jailbird.scorch.AccountActivity" />
+        </activity>
+
+        <service
+            android:name=".LoaderService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".IntroActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name=".LoadingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:noHistory="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FriendActivity"
+            android:configChanges="orientation|uiMode|screenSize|fontScale" />
+        <activity android:name=".ProfileActivity" />
+
+        <service
+            android:name=".NotificationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".FeedActivity"
+            android:configChanges="orientation|uiMode|screenSize|fontScale|keyboardHidden|keyboard"
+            android:label="@string/title_activity_feed">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jailbird.scorch.MapsActivity" />
+        </activity>
+        <activity
+            android:name=".CreateEventActivity"
+            android:configChanges="orientation|uiMode|screenSize|fontScale|keyboardHidden|keyboard"
+            android:label="Add your Event" />
+        <activity
+            android:name=".EventActivity"
+            android:configChanges="orientation|uiMode|screenSize|fontScale|keyboardHidden|keyboard"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jailbird.scorch.FeedActivity" />
+        </activity>
+        <activity android:name=".ListActivity"
+            android:theme="@style/YOUR_STYE"
+            android:configChanges="orientation|uiMode|screenSize|fontScale|keyboardHidden|keyboard"
+            ></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="60dp"
+    android:layout_height="60dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:src="@drawable/day_item"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/friend_image"
+
+        />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/friend_marker"
+        android:layout_gravity="center_vertical"
+        />
+</RelativeLayout>
