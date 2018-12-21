@@ -746,7 +746,7 @@ product="boost_8";
                 eventPlace = new Place.Builder().name(name).placeId(place.getId()).types(placeTypes).location(targetLocation).build();
                 final StorageReference storageRef = storage.getReferenceFromUrl(getString(R.string.photo_bucket)).child("Event Images/" + eventPlace.getPlaceId());
 
-                StorageReference photoRef = storageRef.child("images/" + imgUrl);
+                final StorageReference photoRef = storageRef.child("images/" + imgUrl);
                 UploadTask uploadTask = photoRef.putFile(uri);
 
 // Register observers to listen for when the download is done or if it fails
@@ -762,7 +762,7 @@ product="boost_8";
                         // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
                         //Uri downloadUrl = taskSnapshot.getDownloadUrl();
                         Snackbar.make(coordinatorLayout, " Event Created! ", Snackbar.LENGTH_SHORT).show();
-                        Uri downloadUri = taskSnapshot.getDownloadUrl();
+                        Uri downloadUri = Uri.parse(photoRef.getPath());
                         Event event;
 if(!isBoosted) {
     event = new Event(uniqueID, address, eventPlace, downloadUri.toString(), eventName, eventDetails, interests, startDate, endDate, eventAdmission, 1, 1, isBoosted);

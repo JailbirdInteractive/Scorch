@@ -90,6 +90,7 @@ import com.veinhorn.scrollgalleryview.MediaInfo;
 import com.veinhorn.scrollgalleryview.ScrollGalleryView;
 import com.yalantis.ucrop.UCrop;
 
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -311,7 +312,7 @@ public class PlaceInfoActivity extends AppCompatActivity implements View.OnClick
         //Log.i("Place", "types: " + place.getTypes());
 
         getInterests(place);
-        float d1 = getDistance(myLocation.getLatitude(), myLocation.getLongitude(), place.getLatitude(), place.getLongitude());
+       // float d1 = getDistance(myLocation.getLatitude(), myLocation.getLongitude(), place.getLatitude(), place.getLongitude());
 
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
         //collapsingToolbarLayout.setTitle(thisPlace.getName());
@@ -882,7 +883,7 @@ public class PlaceInfoActivity extends AppCompatActivity implements View.OnClick
         //thisPlace.setLatitude(place.getLatitude());
         //thisPlace.setLongitude(place.getLongitude());
         //float distance=myLocation.distanceTo(thisPlace);
-        //float d1=getDistance(myLocation.getLatitude(),myLocation.getLongitude(),place.getLatitude(),place.getLongitude());
+        float d1=getDistance(myLocation.getLatitude(),myLocation.getLongitude(),place.getLatitude(),place.getLongitude());
         // Log.w("Distance", "Distance " + d1);
 
 
@@ -893,6 +894,7 @@ public class PlaceInfoActivity extends AppCompatActivity implements View.OnClick
         */
         //addressTxt.setText(getCompleteAddressString(place.getLatitude(), place.getLongitude()));
     }
+
 
     public float getDistance(double lat1, double lon1, double lat2, double lon2) {
         if (MainActivity.distanceUnit.equals("Mi.")) {
@@ -954,6 +956,7 @@ public class PlaceInfoActivity extends AppCompatActivity implements View.OnClick
 
         return f * 1000;
     }
+
 
     private void getAddress(noman.googleplaces.Location location) throws IOException {
         Geocoder geocoder;
@@ -1095,7 +1098,7 @@ public class PlaceInfoActivity extends AppCompatActivity implements View.OnClick
             final StorageReference storageRef = storage.getReferenceFromUrl(getString(R.string.photo_bucket)).child("Place Images/" + pID);
 
             final Uri resultUri = UCrop.getOutput(data);
-            StorageReference photoRef = storageRef.child("images/" + resultUri.getLastPathSegment());
+            final StorageReference photoRef = storageRef.child("images/" + resultUri.getLastPathSegment());
             UploadTask uploadTask = photoRef.putFile(resultUri);
 
 // Register observers to listen for when the download is done or if it fails
@@ -1110,7 +1113,7 @@ public class PlaceInfoActivity extends AppCompatActivity implements View.OnClick
                     // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
                     //Uri downloadUrl = taskSnapshot.getDownloadUrl();
 
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
+                    Uri downloadUri = Uri.parse(photoRef.getPath());
 
                     //DatabaseReference myRef= mDatabase.child("trails").push();
                     //myRef.setValue(img);

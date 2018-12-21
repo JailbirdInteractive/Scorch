@@ -8,18 +8,30 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:304187132985:android:f325c02fe6ede3b9",
+        "mobilesdk_app_id": "1:304187132985:android:49f08d1291e51086",
         "android_client_info": {
-          "package_name": "com.jailbird.passerby"
+          "package_name": "com.jailbird.celineapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "304187132985-sc9388ptod5me1crkb55cti1cgiur3lk.apps.googleusercontent.com",
-          "client_type": 3
+          "client_id": "304187132985-6g9nk1i5i8skft4vcsev4cual0mo777a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jailbird.celineapp",
+            "certificate_hash": "de2dcd9f7955557f84264e6023532a1e4644f793"
+          }
         },
         {
-          "client_id": "304187132985-0jvn0e12pehfcs0o1g15h6995e8ecvba.apps.googleusercontent.com",
+          "client_id": "304187132985-h74i5t3a09f3qp5pf16r2ce0hn9aeccf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jailbird.celineapp",
+            "certificate_hash": "e2d4b7f75e7269d6cc6b6d160822bfe13d76ea8a"
+          }
+        },
+        {
+          "client_id": "304187132985-sc9388ptod5me1crkb55cti1cgiur3lk.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -48,18 +60,22 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:304187132985:android:49f08d1291e51086",
+        "mobilesdk_app_id": "1:304187132985:android:f325c02fe6ede3b9",
         "android_client_info": {
-          "package_name": "com.jailbird.celineapp"
+          "package_name": "com.jailbird.passerby"
         }
       },
       "oauth_client": [
         {
-          "client_id": "304187132985-sc9388ptod5me1crkb55cti1cgiur3lk.apps.googleusercontent.com",
-          "client_type": 3
+          "client_id": "304187132985-do8d20or6158usn37p7t002e624m6jii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jailbird.passerby",
+            "certificate_hash": "e2d4b7f75e7269d6cc6b6d160822bfe13d76ea8a"
+          }
         },
         {
-          "client_id": "304187132985-0jvn0e12pehfcs0o1g15h6995e8ecvba.apps.googleusercontent.com",
+          "client_id": "304187132985-sc9388ptod5me1crkb55cti1cgiur3lk.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -95,17 +111,37 @@
       },
       "oauth_client": [
         {
-          "client_id": "304187132985-sc9388ptod5me1crkb55cti1cgiur3lk.apps.googleusercontent.com",
-          "client_type": 3
+          "client_id": "304187132985-2ik7cblfslrpraem2sip2grdkkojdeq5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jailbird.scorch",
+            "certificate_hash": "de2dcd9f7955557f84264e6023532a1e4644f793"
+          }
         },
         {
-          "client_id": "304187132985-0jvn0e12pehfcs0o1g15h6995e8ecvba.apps.googleusercontent.com",
+          "client_id": "304187132985-oj1e940uq6tn2q1ontqfjq2qpmpgfptt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jailbird.scorch",
+            "certificate_hash": "fd21ac42147213f8c299bfb8a505f74c0e70bce5"
+          }
+        },
+        {
+          "client_id": "304187132985-od8a7m32e2000fv4shberolqtrggg84d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jailbird.scorch",
+            "certificate_hash": "681a5297e95b0932262194c5400e3037bbdf9dd9"
+          }
+        },
+        {
+          "client_id": "304187132985-sc9388ptod5me1crkb55cti1cgiur3lk.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCQyX50yZYb2ycenLpY3EWJYZ42g8jiSzE"
+          "current_key": "AIzaSyCuf98jO0BNs9PZEF94tnCHZYXwXox59KM"
         }
       ],
       "services": {

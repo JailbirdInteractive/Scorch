@@ -493,7 +493,7 @@ public class AccountFragment extends Fragment implements GoogleApiClient.OnConne
             final Uri resultUri = UCrop.getOutput(data);
             final StorageReference storageRef = storage.getReferenceFromUrl(getString(R.string.photo_bucket)).child("Profile Images/" + myId);
 
-            StorageReference photoRef = storageRef.child("images/" + resultUri.getLastPathSegment());
+            final StorageReference photoRef = storageRef.child("images/" + resultUri.getLastPathSegment());
             UploadTask uploadTask = photoRef.putFile(resultUri);
 
 // Register observers to listen for when the download is done or if it fails
@@ -509,7 +509,7 @@ public class AccountFragment extends Fragment implements GoogleApiClient.OnConne
                     // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
                     //Uri downloadUrl = taskSnapshot.getDownloadUrl();
                     Snackbar.make(coordinatorLayout, " Photo Added! ", Snackbar.LENGTH_SHORT).show();
-                    Uri downloadUri = taskSnapshot.getDownloadUrl();
+                    Uri downloadUri = Uri.parse(photoRef.getPath());
 
                     //DatabaseReference myRef= mDatabase.child("trails").push();
                     //myRef.setValue(img);

@@ -67,6 +67,7 @@ android:layout_marginBottom="?actionBarSize"
             android:visibility="visible"
             app:indicatorColor="@color/colorPrimary"
             app:indicatorName="BallClipRotatePulseIndicator" />
+
    </FrameLayout>
 
 </RelativeLayout>
